@@ -1,0 +1,50 @@
+body {
+	margin: 0;
+	padding: 0;
+}
+main{
+
+width: 30%;
+height: 300px;
+margin: 0 auto;
+margin-top: 100px;
+background-color: #009688;
+display: flex;
+padding: 3px;
+flex-direction: column;
+}
+
+.quadrado {
+	width: 100px;
+	height: 100px;
+	margin: 2px;
+	background-color: #BA68C8;
+	color: #000;
+	font-family: verdana, arial, cursive;
+	font-weight: bold;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+}
+
+.ajuste-margem{
+margin-top: 2px;
+}
+
+
+.circ{
+	width: 100px;
+	height: 100px;
+	background-color: #FFC107;
+	border-radius: 100%;
+	color: #000;
+	font-family: verdana, arial, cursive;
+	font-weight: bold;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+	margin-left: auto;
+	margin-top: 100px;
+}

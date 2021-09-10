@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Desafio dia 3</title>
+</head>
+<style>
+
+body{
+	margin: 0;
+	}
+	header, footer{
+		width: 100%;
+		height: 40px;
+		background-color: #424242;
+		position: fixed;
+	}
+	header{
+		top: 0px;
+		font-size: 20px ;
+		font-family: arial;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		justify-items: space-around;
+	}
+	footer{
+		width: 100%;
+		height: 60px;
+		bottom: 0;
+		color: white;
+		font-family: arial;
+		font-size: 25px;
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+
+	}
+	main{
+		width: 100%;
+		height: auto;
+		background-color: white;
+		margin-top:40px ;
+		display: flex;
+		flex-direction: row;
+		
+	}
+
+	#content{
+		width: 80%;
+		margin: 0 auto;
+	}
+	.rodape{
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+
+	}
+	.logo{
+		color: white;
+		margin-left: 15%;
+		margin-top: 10px;
+	}
+	
+	.estante1{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: row;
+	justify-content: space-between;
+	background-color: #424242;
+	}
+
+	.quadrado{
+	width: 280px;
+	height: 150px;
+	border: 0;
+	margin-left: 2px;
+	border-right: 2px dotted #212121;
+	background-color: #E0E0E0;
+	color: #000;
+	font-family: arial;
+	font-weight: bold;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 15px;
+	}
+
+     #b1:hover{
+        background-color: #FFA500; 
+        border-radius: 16px;
+    }
+	#b1{
+		width: 50px;
+		height: 30px;
+		background-color: #E65100;
+		color: #fff;
+		border-radius: 16px;
+		display: flex;
+	    justify-content: center;
+	    align-items: center;
+	    padding-right: 30px;
+	    padding-left: 30px;
+	    font-family: verdana;
+	    margin-top: 5px;
+	    cursor: pointer;
+	}
+	#b2{
+		background-color: #424242;
+		color: #fff;
+		display: flex;
+	    justify-content: center;
+	    align-items: center;
+	    padding-right: 30px;
+	    padding-left: 30px;
+	    font-family: verdana;
+	    cursor: pointer;
+
+		
+	}
+	#b3{
+		background-color: #424242;
+		color: #fff;
+		display: flex;
+	    justify-content: center;
+	    align-items: center;
+	    padding-right: 200px;
+	    padding-left: 30px;
+	    font-family: verdana;
+	    cursor: pointer;
+
+	}
+	.estante2{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: row;
+	justify-content: space-between;
+	background-color: #fff;
+	padding-top: 190px;
+	padding-left: 35%;
+	}
+	#email{
+		padding-left: 25px;
+	}
+	a{
+        margin: 2px;
+        padding: 4px;
+        text-decoration: none;
+        font-family: verdana, arial;
+        font-size: 14px;
+		border: 1px solid black;
+		border-radius: 12px;
+		background-color: rgb(150, 241, 150);
+		color: #000;
+
+</style>
+<body>
+	<header>
+		<div class=logo>
+			<b>LOGO<b/>
+		</div>
+		<div class=estante1>
+		<div id="b1">Home</div>
+	    <div id="b2">Contato</div>
+	    <div id="b3">Sobre</div>
+		</div>
+		
+	</header>
+	<main>
+		<div class="estante2">
+<div class="quadrado"><p>"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cum praesentium doloremque dicta, nostrum quod voluptas aperiam consequuntur qui itaque! Suscipit velit voluptatibus natus tenetur obcaecati rerum odit sequi esse libero."</p></div>
+     <form name="frmCadastro" method="post">
+		 <p id=email>Digite seu email</p>
+		<input class="txt" placeholder="E-mail" type="text" name="">
+		<a href="">LOGIN</a>
+		</form>
+
+	</main>
+	<footer>
+		<div id=quad class=rodape>
+			<b>by TI - ACADEMY</b>
+		</div>
+	</footer>
+	
+</body>
+</html>

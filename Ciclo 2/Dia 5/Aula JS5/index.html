@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="module" src="ceps.js"></script>
+    <script type="text/javascript" src="script.js"></script>
+    <title>Aula JS5</title>
+</head>
+<script type="text/javascript" src="script.js">
+    window.onload=function(){
+        const link = document.querySelector("#link");
+        const btn = document.querySelector("#btn")
+          const cxT = document.querySelector("#cxTexto");
+
+          link.addEventListener('click',()=>{
+              alert("Olá")
+          })
+        btn.addEventListener("click", ()=>{
+                cxT.value="Willian H."
+        })
+        cxT.addEventListener('click',()=>{
+            cxT.value=' ';
+        })
+    }
+
+</script>
+<body>
+    <!-- Elementos HTML usuario/interface/servidor 
+
+        div
+        input text / password / submit
+        ul > li
+        a href
+
+    
+    <a id="link" class="llink" href="">Elemento Link</a>
+    <input type="button" id="btn" value="click">
+    <input id="cxTexto" type="text" name="cxTexto" value="">
+    -->
+    <input type="text" class="cxCep" name="cep">
+    <input type="text" id="logradouro" name="rua">
+    <input type="text" id="bairro" name="bairro">
+    <input type="button" id="btnBuscaCep" value="BUSCAR CEP" name="buscar">
+</body>
+</html>

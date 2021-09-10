@@ -1,0 +1,14 @@
+var nome = prompt("Digite seu nome"); 
+var numero = parseInt(prompt(nome + " digite um número")); 
+var booleana = (20==numero);
+var soma = (20+numero);
+var subtracao = (20-numero);
+var resto = (20%numero);
+var quadrado = (numero*numero);
+document.write("1. Seja bem vindo (a):"+nome +"<br>");
+document.write("2. Você digitou o número:"+numero+"<br>");
+document.write("3. O retorno da comparação booleana é:"+booleana+"<br>");
+document.write("4. A soma dos valores é:"+soma+"<br>");
+document.write("5. A subtração dos valores é de:"+subtracao+"<br>");
+document.write("6. O resto da divisão é de:"+resto+"<br>");
+document.write("7. O quadrado do número digitado é:"+quadrado+"<br>");

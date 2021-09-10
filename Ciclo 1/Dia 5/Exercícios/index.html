@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="site2.css">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+	<title>Document</title>
+</head>
+<style>
+	*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+
+}
+
+body{
+	background-color: #2195f8;
+}
+
+header{
+	position: absolute;
+	z-index: 0;
+	width: 100%;
+	height: 200px;
+	display: flex;
+	flex-direction: column;
+	border-bottom: 2px solid #fff;
+}
+
+header > h1{
+	padding: 5px;
+	color: #fff;
+	text-align: center;
+	font-family: verdana, arial, cursive;
+	margin-top: 40px;
+
+
+}
+
+header > h2{
+	color: #fff;
+	width: 100%;
+	height: 40px;
+	font-family: verdana, arial, cursive;
+	font-size: 14px;
+	text-align: center;
+}
+
+main{
+	position: absolute;
+	z-index: 100;
+	width: 100%;
+	height: auto;
+	top: 230px;
+	
+}
+
+#conteudo_geral{
+	width: 80%;
+	margin: 0 auto;
+	flex-direction: column;
+	
+}
+
+.box_custom{
+	width: 100%;
+	height: auto;
+
+}
+
+a{
+	text-decoration: none;
+	color: #000;
+}
+
+form{
+	width: 400px;
+	height: auto;
+	padding: 10px;
+}
+
+.flex{
+	display: flex;
+}
+
+.justify-content{
+	justify-content: center;
+}
+
+.display-btn{
+	width: 100%;
+	height: auto;
+	padding-top: 4px;
+}
+
+.btn{
+	padding: 8px;
+	width: 100%;
+	border: none;
+	border-radius: 3px;
+	background-color: green;
+	color: #fff;
+
+}
+
+form > label{
+	width: 100%;
+	height: auto;
+	display: flex;
+	flex-direction: column;
+	font-family: verdana,cursive;
+}
+
+form > label > input[type=text]{
+	font-size: 14px;
+	border: none;
+	padding: 4px;
+}
+
+#logo-principal{
+	width: 100px;
+	height: 100px;
+	border-radius: 100%;
+	background-color: #fff;
+	align-items: center;
+
+}
+
+#logo-principal .logo{
+	font-size: 85px;
+}
+
+#content-base{
+	width: 100%;
+	height: auto;
+	position: absolute;
+	top: 120px;
+}
+	*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+
+}
+
+body{
+	background-color: #2195f8;
+}
+
+header{
+	position: absolute;
+	z-index: 0;
+	width: 100%;
+	height: 200px;
+	display: flex;
+	flex-direction: column;
+	border-bottom: 2px solid #fff;
+}
+
+header > h1{
+	padding: 5px;
+	color: #fff;
+	text-align: center;
+	font-family: verdana, arial, cursive;
+	margin-top: 40px;
+
+
+}
+
+header > h2{
+	color: #fff;
+	width: 100%;
+	height: 40px;
+	font-family: verdana, arial, cursive;
+	font-size: 14px;
+	text-align: center;
+}
+
+main{
+	position: absolute;
+	z-index: 100;
+	width: 100%;
+	height: auto;
+	top: 230px;
+	
+}
+
+#conteudo_geral{
+	width: 80%;
+	margin: 0 auto;
+	flex-direction: column;
+	
+}
+
+.box_custom{
+	width: 100%;
+	height: auto;
+
+}
+
+a{
+	text-decoration: none;
+	color: #000;
+}
+
+form{
+	width: 400px;
+	height: auto;
+	padding: 10px;
+}
+
+.flex{
+	display: flex;
+}
+
+.justify-content{
+	justify-content: center;
+}
+
+.display-btn{
+	width: 100%;
+	height: auto;
+	padding-top: 4px;
+}
+
+.btn{
+	padding: 8px;
+	width: 100%;
+	border: none;
+	border-radius: 3px;
+	background-color: green;
+	color: #fff;
+
+}
+
+form > label{
+	width: 100%;
+	height: auto;
+	display: flex;
+	flex-direction: column;
+	font-family: verdana,cursive;
+}
+
+form > label > input[type=text]{
+	font-size: 14px;
+	border: none;
+	padding: 4px;
+}
+
+#logo-principal{
+	width: 100px;
+	height: 100px;
+	border-radius: 100%;
+	background-color: #fff;
+	align-items: center;
+
+}
+
+#logo-principal .logo{
+	font-size: 85px;
+}
+
+#content-base{
+	width: 100%;
+	height: auto;
+	position: absolute;
+	top: 120px;
+</style>
+<body>
+	<header>
+		<h1>ME ACHA!</h1>
+		<h2>ENCONTRE UM ENDEREÇO PELO NÚMERO DE CEP</h2>
+
+		<div id="content-base" class="flex justify-content">
+			<div id="logo-principal" class="flex justify-content">
+				<span class="material-icons logo">travel_explore
+				</span>
+			</div>
+		</div>
+	</header>
+	
+	<main>
+		
+		<div id="conteudo_geral" class="flex justify-content">
+			
+			<div class="box_custom flex justify-content">
+				<form action="">
+					<label>CEP
+						<input type="text" name="cep" required>
+					</label>
+					<label>RUA	
+						<input type="text" name="rua"  readonly >
+					</label>
+					<label>BAIRRO
+						<input type="text" name="bairro" readonly>
+					</label>
+					<label>CIDADE
+						<input type="text" name="cidade" readonly>
+					</label>
+					<label>UF
+						<input type="text" name="uf" readonly>
+					</label>
+					<div class="display-btn flex justify-content">
+						<input  class="btn" type="button" value="BUSCAR" name="buscar">
+					</div>
+				
+				</form>
+				
+			</div>
+		</div>
+		
+	</main>
+
+	<footer></footer>
+</body>
+</html>

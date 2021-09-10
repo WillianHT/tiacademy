@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="JS/eventos.js"></script>
+    <title>Document</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    .cor {
+        background-color: red;
+    }
+
+    .modal {
+        width: 100vw;
+        height: 100vh;
+        background-color: rgba(0, 0, 0, 0.4);
+        position: absolute;
+    }
+</style>
+
+<body>
+    <div id="janModal">
+        <input type="button" value="x" id="btnFechar" >
+    </div>
+    <main>
+        <input type="text" value="" id="txt" name="">
+        <input type="button" id="btn" name="btn-main" value="Clique">
+        <p class="legenda"></p>
+
+        <br>
+        <p>Ver Senha</p>
+        <input type="password" id="psdVerSenha">
+        <input type="button" id="btnVerSenha" name="btn-main" value="Ver Senha">
+        <br>
+        <p>Perder o foco</p>
+        <input id="txtSimples" type="text">
+        <br>
+        <p>Somando valores</p>
+        <input id="txtValor1" type="text">
+        <input id="txtValor2" type="text">
+        <input type="button" id="btnCalcular" value="Somar">
+        <br>
+        <br>
+        <span id="resultado"></span>
+
+        <p>Modal</p>
+        <input type="button" id="btnModal" value="Modal">
+
+    </main>
+</body>
+
+</html>

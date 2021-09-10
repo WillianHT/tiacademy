@@ -1,0 +1,50 @@
+body {
+    margin-top: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: auto;
+    width: 450px;
+    height: 120px;
+    border:#000  solid 1px;
+    border-radius: 5px;
+    padding: 10px;
+    z-index: 1;
+  }
+  .caixa {
+    margin-top: 7px;
+    border-radius: 12px;
+    width: 400px;
+    height: 120px;
+    justify-content: space-between;
+    margin-left: 5px;
+  }
+  label {
+    display: flex;
+    font-family: Verdana, arial, cursive;
+    font-size: 18px;
+    justify-content: space-between;
+    text-align: left;
+    margin-left: 5px;
+  }
+  
+  #valor1, #valor2, #resultado {
+    display: flex;
+    justify-content: space-between;
+    border-radius: 5px;
+    margin-right: 20px;
+    padding: 5px;
+  }
+  #btn {
+    padding: 5px;
+    border-radius: 5px;
+    background-color: rgb(98, 170, 98);
+    color: #fff;
+  }
+ 
